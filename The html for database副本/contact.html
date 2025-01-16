@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Rescue - Contact</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 100px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #666;
+        }
+
+        /* Copy all existing styles from your about page */
+        /* Adding new styles for contact page */
+        .contact-form {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="./test.html" class="nav-link">Home page</a>
+                <a href="./Home.html" class="nav-link">Maintenance Tips</a>
+                <a href="./adoption.html" class="nav-link">Adoption</a>
+                <a href="./sponsorship.html" class="nav-link">Sponsorship</a>
+                <a href="./contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-links">
+                <a href="./rescuer-login.html" class="nav-link">Rescuer Login</a>
+                <a href="./adopter-login.html" class="nav-link">Adopter Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-image">
+        <h1 class="hero-title">Contact Us</h1>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="contact-form">
+            <h2>Send us a Message</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="button" style="border: 2px solid #333;">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>Other Ways to Reach Us</h3>
+                <p>Email: info@catrescue.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Cat Street, Pawville, CA 12345</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
