@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Sponsorship</title>
+    <style>
+        /* Copy the navbar styles from your other pages */
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 100px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Your existing navbar styles here */
+
+        .sponsorship-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .sponsorship-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .sponsorship-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .sponsorship-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .price {
+            font-size: 2.5em;
+            color: #4CAF50;
+            margin: 20px 0;
+        }
+
+        .sponsor-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sponsor-button:hover {
+            background-color: #45a049;
+        }
+
+        .benefits-list {
+            text-align: left;
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        .benefits-list li {
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .intro-text {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="test.html" class="nav-link">Home page</a>
+                <a href="Home.html" class="nav-link">Maintenance Tips</a>
+                <a href="adoption.html" class="nav-link">Adoption</a>
+                <a href="sponsorship.html" class="nav-link">Sponsorship</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-links">
+                <a href="rescuer-login.html" class="nav-link">Rescuer Login</a>
+                <a href="adopter-login.html" class="nav-link">Adopter Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sponsorship-container">
+        <h1 style="text-align: center;">Support Our Cats</h1>
+        <p class="intro-text">
+            Your sponsorship helps us provide food, medical care, and shelter for cats in need.
+            Choose a sponsorship level that works for you and make a difference in a cat's life today.
+        </p>
+
+        <div class="sponsorship-options">
+            <div class="sponsorship-card">
+                <h2>Monthly Friend</h2>
+                <div class="price">$20</div>
+                <ul class="benefits-list">
+                    <li>Monthly updates about our cats</li>
+                    <li>Name on our website</li>
+                    <li>Thank you certificate</li>
+                </ul>
+                <a href="#" class="sponsor-button">Become a Friend</a>
+            </div>
+
+            <div class="sponsorship-card">
+                <h2>Guardian Angel</h2>
+                <div class="price">$50</div>
+                <ul class="benefits-list">
+                    <li>All Friend benefits</li>
+                    <li>Quarterly newsletter</li>
+                    <li>Exclusive event invitations</li>
+                </ul>
+                <a href="#" class="sponsor-button">Become a Guardian</a>
+            </div>
+
+            <div class="sponsorship-card">
+                <h2>Lifesaver</h2>
+                <div class="price">$100</div>
+                <ul class="benefits-list">
+                    <li>All Guardian benefits</li>
+                    <li>Personal updates about sponsored cat</li>
+                    <li>VIP access to adoption events</li>
+                </ul>
+                <a href="#" class="sponsor-button">Become a Lifesaver</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

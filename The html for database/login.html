@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Selection</title>
+    <style>
+        /* Copy the navbar styles from your other pages */
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 100px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Your existing navbar styles here */
+
+        .login-options {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .login-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .login-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .login-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .login-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Copy your navbar structure here -->
+    </nav>
+
+    <div class="login-options">
+        <div class="login-card">
+            <div class="login-icon">🏥</div>
+            <h2>Rescuer Login</h2>
+            <p>Access your rescuer dashboard and manage rescue operations.</p>
+            <a href="rescuer-login.html" class="login-button">Login as Rescuer</a>
+        </div>
+
+        <div class="login-card">
+            <div class="login-icon">🏠</div>
+            <h2>Adopter Login</h2>
+            <p>Access your adoption applications and saved favorites.</p>
+            <a href="adopter-login.html" class="login-button">Login as Adopter</a>
+        </div>
+    </div>
+</body>
+</html> 

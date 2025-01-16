@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Adoption Page</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 100px;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #666;
+        }
+        .filter-bar {
+            background-color: #007BFF; /* Blue color */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            margin-top: 20px; /* Space below the navbar */
+        }
+        .filter-group {
+            display: flex;
+            gap: 20px;
+        }
+        .filter-select {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .cat-grid {
+            display: flex; /* Changed to flex for a single row */
+            gap: 30px;
+            padding: 20px 0; /* Adjusted padding */
+            overflow-x: auto; /* Allows horizontal scrolling if needed */
+        }
+        .cat-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            min-width: 250px; /* Set a minimum width for cards */
+        }
+        .cat-card:hover {
+            transform: translateY(-5px);
+        }
+        .cat-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .cat-info {
+            padding: 20px;
+        }
+        .cat-name {
+            font-size: 1.5em;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .cat-details {
+            margin: 0;
+            color: #666;
+            line-height: 1.6;
+        }
+        .adopt-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .adopt-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="test.html" class="nav-link">Home page</a>
+                <a href="Home.html" class="nav-link">Maintenance Tips</a>
+                <a href="adoption.html" class="nav-link">Adoption</a>
+                <a href="sponsorship.html" class="nav-link">Sponsorship</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-links">
+                <a href="rescuer-login.html" class="nav-link">Rescuer Login</a>
+                <a href="adopter-login.html" class="nav-link">Adopter Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="filter-bar">
+        <div class="filter-group">
+            <select class="filter-select">
+                <option value="">Age</option>
+                <option value="kitten">Kitten</option>
+                <option value="young">Young</option>
+                <option value="adult">Adult</option>
+                <option value="senior">Senior</option>
+            </select>
+            <select class="filter-select">
+                <option value="">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <select class="filter-select">
+                <option value="">Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </div>
+        <div>Cats for Adoption</div>
+    </div>
+
+    <div class="content">
+        <h1>Adoption Information</h1>
+        <div class="cat-grid">
+            <div class="cat-card">
+                <img src="cat1.jpg" alt="Whiskers" class="cat-image">
+                <div class="cat-info">
+                    <h3 class="cat-name">Whiskers</h3>
+                    <p class="cat-details">Age: 2 years<br>Gender: Male<br>Personality: Friendly, Playful</p>
+                    <a href="#" class="adopt-button">Adopt Me</a>
+                </div>
+            </div>
+            <div class="cat-card">
+                <img src="cat2.jpg" alt="Fluffy" class="cat-image">
+                <div class="cat-info">
+                    <h3 class="cat-name">Fluffy</h3>
+                    <p class="cat-details">Age: 3 years<br>Gender: Female<br>Personality: Calm, Affectionate</p>
+                    <a href="#" class="adopt-button">Adopt Me</a>
+                </div>
+            </div>
+            <div class="cat-card">
+                <img src="cat3.jpg" alt="Mittens" class="cat-image">
+                <div class="cat-info">
+                    <h3 class="cat-name">Mittens</h3>
+                    <p class="cat-details">Age: 1 year<br>Gender: Male<br>Personality: Playful, Energetic</p>
+                    <a href="#" class="adopt-button">Adopt Me</a>
+                </div>
+            </div>
+            <div class="cat-card">
+                <img src="cat4.jpg" alt="Shadow" class="cat-image">
+                <div class="cat-info">
+                    <h3 class="cat-name">Shadow</h3>
+                    <p class="cat-details">Age: 4 years<br>Gender: Female<br>Personality: Independent, Curious</p>
+                    <a href="#" class="adopt-button">Adopt Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
